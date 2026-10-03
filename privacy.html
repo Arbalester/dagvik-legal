@@ -3,36 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="StrideTab privacy policy." />
-    <title>Privacy Policy — StrideTab</title>
-    <link rel="stylesheet" href="styles.css?v=20260922" />
+    <meta name="description" content="Dagvik privacy policy." />
+    <title>Privacy Policy — Dagvik</title>
+    <link rel="stylesheet" href="styles.css?v=20261003" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header"><a class="wordmark" href="index.html" aria-label="StrideTab home"><span class="mark">ST</span><span>StrideTab</span></a><nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="terms.html">Terms</a></nav></header>
+    <header class="site-header"><a class="wordmark" href="index.html" aria-label="Dagvik home"><span class="mark">D</span><span>Dagvik</span></a><nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="terms.html">Terms</a></nav></header>
     <main id="main" class="legal-page section-wrap">
-      <p class="eyebrow">StrideTab / Legal</p><h1>Privacy Policy</h1><p class="legal-updated">Last updated: September 17, 2026</p>
-      <p class="legal-lede">StrideTab is a Chrome new-tab extension designed to work locally first. This policy explains what the extension stores, what it sends when optional services are enabled, and how you can contact the project.</p>
-      <aside class="legal-callout"><strong>In short</strong><span>The core workspace is stored in your browser and does not require an account. Optional cloud features, feedback and product activity use Supabase only when configured for the release.</span></aside>
+      <p class="eyebrow">Dagvik / Legal</p><h1>Privacy Policy</h1><p class="legal-updated">Last updated: October 3, 2026</p>
+      <p class="legal-lede">Dagvik is a Chrome new-tab extension. It works without an account and keeps working without a network connection. This policy explains what the extension stores, what it sends to the Dagvik server and to other services, how long data is kept and how to delete it.</p>
+      <aside class="legal-callout"><strong>In short</strong><span>Your workspace is stored in your browser and synchronized automatically with the Dagvik server under an anonymous internal identity — no account, email or password. Browsing history and your own background images never leave your device. Synchronized data is kept until you delete it. Dagvik does not sell data, show ads or send activity analytics.</span></aside>
       <div class="legal-content">
-        <h2>1. Information stored on your device</h2>
-        <p>StrideTab stores workspace settings, quick links, tasks, blocked domains, widget layouts, Pomodoro state, reminders and screen settings in Chrome local storage. Custom background images are kept locally in the browser. Diagnostic logs, timer runtime data and reminder delivery receipts remain on the device.</p>
-        <h2>2. Optional cloud storage</h2>
-        <p>If a release is configured with Supabase and you enable an account, selected durable workspace data may be mirrored to owner-bound Supabase rows. Supabase Row Level Security restricts these rows to the account owner. Device-only diagnostics, active runtimes, reminder receipts, credentials and provider tokens are excluded.</p>
-        <h2>3. Feedback</h2>
-        <p>The in-app feedback form can send the name, email address, message, language and extension version to the configured Supabase project. Feedback messages and support replies are stored in a support thread. The form is not sent when Supabase is unavailable.</p>
-        <h2>4. Product activity and diagnostics</h2>
-        <p>When cloud services are enabled, StrideTab may record limited activity events such as an app opening or a feature being used. Events contain an allow-listed action, a coarse screen name and small technical flags. They do not contain task text, notes, saved URLs, browsing history, storage values, message contents or credentials. Error diagnostics are kept locally and are not uploaded automatically.</p>
-        <h2>5. Network services</h2>
-        <p>Optional widgets may contact third-party services to provide their feature: Google Search suggestions, Open-Meteo weather/geocoding, ipwho.is approximate location, RSS feeds, CoinGecko or Yahoo Finance quotes, and favicon resolvers. The extension sends only the information needed for the selected request. Local history suggestions are read only after you invoke that feature and are not uploaded to StrideTab.</p>
-        <h2>6. Sharing and selling</h2>
-        <p>StrideTab does not sell personal data or use it for advertising or credit decisions. Data is shared with Supabase and the selected widget providers only when needed to provide the enabled feature. Payment processing, if enabled in a future release, will be handled by the disclosed payment provider rather than by the extension.</p>
-        <h2>7. Your choices</h2>
-        <p>You can use the core extension without an account, disable optional widgets, clear local extension data through Chrome, sign out of an account, and delete a registered account through the extension where that feature is available. For a privacy question or deletion request, use the Feedback link in StrideTab Settings and include an email address if you need a reply.</p>
-        <h2>8. Changes</h2>
-        <p>This policy may be updated when the extension's data practices change. The date above identifies the current version. Material changes should also be disclosed in the extension and its store listing.</p>
+        <h2>1. Who is responsible</h2>
+        <p>Controller: [legal name and postal address of the operator]. Privacy contact: the <strong>Feedback</strong> form in Dagvik Settings, or [privacy email]. A request sent from the extension is linked to your installation, so we can find the data it refers to.</p>
+
+        <h2>2. Data stored on your device</h2>
+        <p>Screens, settings, widget layouts and widget settings (including notes and day-planner entries), tasks and their reminders, quick links, blocked and allowed domains and Pomodoro settings are stored in Chrome local storage, together with timestamps of when each item was last changed or deleted. Your own PNG, JPEG and WebP backgrounds are stored in the browser's IndexedDB. Diagnostics (at most 100 entries for seven days), reminder delivery receipts, running timers, cached weather, browser-history suggestions and the suggestions you hid stay on the device only.</p>
+
+        <h2>3. Synchronization with the Dagvik server</h2>
+        <p>On first start the extension creates an anonymous internal identity on the Dagvik server. There is no sign-in, registration or email. Whenever you are online, your workspace is synchronized automatically: changes made offline are uploaded when the connection returns, and the most recent change of each item wins.</p>
+        <p>The server copy contains your screens, settings, layouts and widget settings (including note and day-planner text and the selected weather city or approximate weather coordinates), tasks with their text and reminders, quick links, blocked and allowed domains, Pomodoro settings, change timestamps and deletion markers. A deletion marker holds only an item's identifier and deletion time, not its content. The server copy never contains browsing history, your background images, diagnostics or running timers. Each identity can store at most 25 MB. Server rows are protected so that one identity cannot read another identity's data.</p>
+
+        <h2>4. Feedback</h2>
+        <p>The Feedback form sends the name, email address and message you enter, your interface language and the extension version to the Dagvik server, linked to your installation's identity. Each installation can send up to five messages per hour. Feedback is only sent when you submit the form.</p>
+
+        <h2>5. Weather</h2>
+        <p>For current-location weather your public IP address is sent to ipwho.is to estimate a city; the result is kept on your device for 12 hours. Forecast coordinates are rounded to a cell of about 11 km and only that cell is sent to the Dagvik weather service, which shares one cached forecast per cell with everyone in it and refreshes it from Open-Meteo at most once an hour. Cached forecasts carry no user identifier and are removed after two days. To protect the service, requests to Open-Meteo are counted per installation (or per one-way hash of the IP address) for one hour; the counters hold no location and are removed after one day. If the service is unavailable, the extension asks Open-Meteo directly. City names you search for are sent to the Open-Meteo geocoding service.</p>
+
+        <h2>6. Other network requests</h2>
+        <p>While autocomplete is enabled, Google receives the partial text you type into the search widget; a submitted search goes to the selected search provider. For HTTP links the favicon may be requested from Google's favicon service with the site address; for HTTPS links the browser requests the site's own icon. The optional History permission is requested only when you ask for quick-link suggestions; up to 500 recent entries are read on your device and never sent to Dagvik. Task reminders open a small Dagvik window with a short sound and do not use system notifications.</p>
+
+        <h2>7. How long data is kept and how to delete it</h2>
+        <p>Synchronized workspace data is kept without a time limit until you delete it, also after the extension is uninstalled. Deleting an item in Dagvik removes its content from the server at the next synchronization; only the deletion marker remains. To delete everything stored on the server, send a deletion request through the Feedback form <strong>before uninstalling</strong> the extension — the request identifies your installation, and we delete all of its data. Feedback is kept until you ask for its deletion. Data stored only on your device is removed when you uninstall Dagvik or clear its storage in Chrome.</p>
+
+        <h2>8. Legal basis, service providers and your rights</h2>
+        <p>Synchronization is part of the service you install (performance of a contract, Art. 6(1)(b) GDPR). Abuse limits, request counters and the shared weather cache rely on our legitimate interest in a secure and available service (Art. 6(1)(f) GDPR). Feedback is processed to answer your request. The server copy, feedback and weather cache are hosted by Supabase as our processor in the European Union (Ireland); any transfer outside the EEA relies on the Standard Contractual Clauses of the Supabase data processing agreement. You may request access, correction, restriction, objection, portability or deletion through the contact above, and you may lodge a complaint with the data-protection authority of your country.</p>
+
+        <h2>9. Sharing and selling</h2>
+        <p>Dagvik does not sell personal data, use it for advertising or credit decisions, or handle payment details. Data is shared only with the service providers named above, as needed to provide the feature you use.</p>
+
+        <h2>10. Changes</h2>
+        <p>This policy is updated when the extension's data practices change. The date above identifies the current version. Material changes are also disclosed in the extension and its store listing.</p>
       </div>
     </main>
-    <footer class="site-footer section-wrap"><a class="wordmark" href="index.html"><span class="mark">ST</span><span>StrideTab</span></a><span class="footer-note">Questions? Use Feedback in the extension.</span><nav aria-label="Footer navigation"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></footer>
+    <footer class="site-footer section-wrap"><a class="wordmark" href="index.html"><span class="mark">D</span><span>Dagvik</span></a><span class="footer-note">Questions? Use Feedback in the extension.</span><nav aria-label="Footer navigation"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></footer>
   </body>
 </html>
