@@ -2,12 +2,12 @@
 
 Static GitHub Pages site for the Dagvik landing page, Terms of Service and Privacy Policy.
 
-- Landing page: `https://arbalester.github.io/stridetab-legal/`
-- Product preview: `https://arbalester.github.io/stridetab-legal/preview.html`
-- Privacy Policy: `https://arbalester.github.io/stridetab-legal/privacy.html`
-- Terms of Service: `https://arbalester.github.io/stridetab-legal/terms.html`
+- Landing page: `https://arbalester.github.io/dagvik-legal/`
+- Product preview: `https://arbalester.github.io/dagvik-legal/preview.html`
+- Privacy Policy: `https://arbalester.github.io/dagvik-legal/privacy.html`
+- Terms of Service: `https://arbalester.github.io/dagvik-legal/terms.html`
 
-The repository keeps its original name `stridetab-legal`, so the published URLs above stay valid. Renaming the repository changes them; then update `VITE_TERMS_URL` and `VITE_PRIVACY_URL` of the extension.
+The repository was renamed from `stridetab-legal` to `dagvik-legal`. GitHub Pages does not redirect the old project URL, so the extension's `VITE_TERMS_URL` and `VITE_PRIVACY_URL` defaults point to the new address.
 
 ## Publish with GitHub Pages
 
